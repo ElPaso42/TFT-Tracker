@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:TFT_Tracker.Views"
         mc:Ignorable="d"
         Title="ChampView" Height="450" Width="800">
-    <Grid>
+
         
-    </Grid>
+    
+    <DockPanel x:Name="ChampPanel" LastChildFill="False" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Image x:Name="Aatrox" Width="100" Source="/Resources/Images/Champs/Aatrox.png"/>
+    </DockPanel>
 </Window>
