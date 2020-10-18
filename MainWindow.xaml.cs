@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TFT_Tracker.ViewModels;
 
 namespace TFT_Tracker
 {
@@ -23,6 +24,8 @@ namespace TFT_Tracker
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = new MainViewModel();
         }
     }
 }
