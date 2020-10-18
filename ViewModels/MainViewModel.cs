@@ -4,7 +4,16 @@ using System.Text;
 
 namespace TFT_Tracker.ViewModels
 {
-    class MainViewModel
+    // Generelle Funktion
+    class MainViewModel : BaseViewModel
     {
+        public BaseViewModel _selectedView;
+
+        public BaseViewModel SelectedViewModel
+        {
+            get { return _selectedView; }
+            set { _selectedView = value; }
+        }
+
     }
 }

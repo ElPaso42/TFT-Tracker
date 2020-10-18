@@ -4,7 +4,8 @@ using System.Text;
 
 namespace TFT_Tracker.ViewModels
 {
-    class ItemViewModel
+    //Enthält Funktionalität für Items
+    class ItemViewModel : BaseViewModel
     {
     }
 }

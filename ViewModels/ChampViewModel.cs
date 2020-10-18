@@ -4,7 +4,8 @@ using System.Text;
 
 namespace TFT_Tracker.ViewModels
 {
-    class ChampViewModel
+    //Enthält funktionalität für die Champ View
+    class ChampViewModel : BaseViewModel
     {
     }
 }
