@@ -2,14 +2,14 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:TFT_Tracker"
+             xmlns:views ="clr-namespace:TFT_Tracker.Views"
              xmlns:viewmodels="clr-namespace:TFT_Tracker.ViewModels"
-             xmlns:views="clr-namespace:TFT_Tracker.Views"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <DataTemplate DataType="{x:Type viewmodels:ChampViewModel}">
             <views:ChampView/>
         </DataTemplate>
-        
+
         <DataTemplate DataType="{x:Type viewmodels:ItemViewModel}">
             <views:ItemView/>
         </DataTemplate>
