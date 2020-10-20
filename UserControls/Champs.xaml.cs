@@ -9,20 +9,21 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Navigation;
+
 
 namespace TFT_Tracker.Views
 {
     /// <summary>
     /// Interaktionslogik für ChampView.xaml
     /// </summary>
-    public partial class ChampView : Window
+    public partial class Champs : UserControl
     {
 
 
-
-        public ChampView()
+        public Champs()
         {
-
+            InitializeComponent();
             Grid gridChamps = new Grid();
             gridChamps.Height = 550;
             gridChamps.VerticalAlignment = VerticalAlignment.Top;
