@@ -12,7 +12,7 @@ using System.Windows.Shapes;
 using System.Windows.Navigation;
 
 
-namespace TFT_Tracker.Views
+namespace TFT_Tracker.UserControls
 {
     /// <summary>
     /// Interaktionslogik für ChampView.xaml
@@ -25,7 +25,6 @@ namespace TFT_Tracker.Views
         {
             InitializeComponent();
             Grid gridChamps = new Grid();
-            gridChamps.Height = 550;
             gridChamps.VerticalAlignment = VerticalAlignment.Top;
             gridChamps.Background = Brushes.DimGray;
 
