@@ -8,18 +8,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TFT_Tracker.Views
+namespace TFT_Tracker.UserControls
 {
     /// <summary>
-    /// Interaktionslogik für ChampView.xaml
+    /// Interaktionslogik für Champs.xaml
     /// </summary>
-    public partial class ChampView : Window
+    public partial class Champs : UserControl
     {
-        public ChampView()
+        public Champs()
         {
-            this.Aatrox.Source = "/Resources/Images/Champs/Ahri.png";
             InitializeComponent();
         }
     }
