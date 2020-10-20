@@ -25,11 +25,38 @@ namespace TFT_Tracker
             InitializeComponent();
 
         }
-
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+            SetActiveUserControl(home);
+        }
 
         private void btnChamps_Click(object sender, RoutedEventArgs e)
         {
-
+            SetActiveUserControl(champs);
         }
+
+
+        private void btnItems_Click(object sender, RoutedEventArgs e)
+        {
+            SetActiveUserControl(items);
+        }
+
+        private void btnComps_Click(object sender, RoutedEventArgs e)
+        {
+            SetActiveUserControl(comp);
+        }
+
+        public void SetActiveUserControl(UserControl control)
+        {
+            //Collapse all Views
+            home.Visibility = Visibility.Collapsed;
+            champs.Visibility = Visibility.Collapsed;
+            items.Visibility = Visibility.Collapsed;
+            comp.Visibility = Visibility.Collapsed;
+
+            //Show current View
+            control.Visibility = Visibility.Visible;
+        }
+
     }
 }
