@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TFT_Tracker"
         xmlns:userControls="clr-namespace:TFT_Tracker.UserControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1280">
+        Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="btnHome" Content="Home" Margin="10, 28, 652, 361" Click="btnHome_Click"/>
         <Button x:Name="btnChamps" Content="Champs" Margin="10, 95, 652, 294" Click="btnChamps_Click"/>
