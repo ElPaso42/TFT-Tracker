@@ -15,9 +15,9 @@
 
         <Grid x:Name="contentContainer" Margin="170,0,0,0">
             <userControls:Home x:Name="home"></userControls:Home>
-            <userControls:Champs Visibility="Collapsed" x:Name="champs"></userControls:Champs>
-            <userControls:ItemView Visibility="Collapsed" x:Name="items"></userControls:ItemView>
-            <userControls:CompView Visibility="Collapsed" x:Name="comp"></userControls:CompView>
+            <userControls:Champs x:Name="champs" Visibility="Collapsed"></userControls:Champs>
+            <userControls:ItemView x:Name="items" Visibility="Collapsed"></userControls:ItemView>
+            <userControls:CompView x:Name="comp" Visibility="Collapsed"></userControls:CompView>
         </Grid>
     </Grid>
 </Window>
