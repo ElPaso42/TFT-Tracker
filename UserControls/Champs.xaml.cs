@@ -17,6 +17,9 @@ namespace TFT_Tracker.Views
     /// </summary>
     public partial class ChampView : Window
     {
+
+
+
         public ChampView()
         {
 
@@ -202,9 +205,9 @@ namespace TFT_Tracker.Views
 
             this.Content = gridChamps;
 
-            InitializeComponent();
-
         }
+
+
         private Border CreateImage(string var, SolidColorBrush brush)
         {
             Border tempBorder = new Border();
