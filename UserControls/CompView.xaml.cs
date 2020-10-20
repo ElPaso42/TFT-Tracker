@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -13,23 +11,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TFT_Tracker
+namespace TFT_Tracker.UserControls
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaktionslogik für CompView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CompView : UserControl
     {
-        public MainWindow()
+        public CompView()
         {
             InitializeComponent();
-
-        }
-
-
-        private void btnChamps_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
