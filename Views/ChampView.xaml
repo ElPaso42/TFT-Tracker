@@ -5,11 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TFT_Tracker.Views"
         mc:Ignorable="d"
-        Title="ChampView" Height="450" Width="800">
-
-        
+        Title="ChampView" Height="720" Width="1280">
     
-    <DockPanel x:Name="ChampPanel" LastChildFill="False" HorizontalAlignment="Left" VerticalAlignment="Top">
-        <Image x:Name="Aatrox" Width="100" Source="/Resources/Images/Champs/Aatrox.png"/>
-    </DockPanel>
+   
 </Window>
