@@ -19,7 +19,7 @@ namespace TFT_Tracker.Views
     {
         public ChampView()
         {
-            this.Aatrox.Source = "/Resources/Images/Champs/Ahri.png";
+            //this.Aatrox.Source = "/Resources/Images/Champs/Ahri.png";
             InitializeComponent();
         }
     }
