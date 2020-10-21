@@ -7,17 +7,32 @@
         xmlns:userControls="clr-namespace:TFT_Tracker.UserControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="btnHome" Content="Home" Margin="10, 28, 652, 361" Click="btnHome_Click"/>
-        <Button x:Name="btnChamps" Content="Champs" Margin="10, 95, 652, 294" Click="btnChamps_Click"/>
-        <Button x:Name="btnItems" Content="Items" Margin="10, 169, 652, 220" Click="btnItems_Click"/>
-        <Button x:Name="btnComps" Content="Comps" Margin="10, 246, 652, 143" Click="btnComps_Click"/>
-
-        <Grid x:Name="contentContainer" Margin="170,0,0,0">
+    <Grid x:Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        <Grid x:Name="menuBar">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Button FontSize="24" Grid.Column="0" x:Name="btnHome" Content="Home" Click="btnHome_Click"/>
+            <Button FontSize="24" Grid.Column="1" x:Name="btnChamps" Content="Champs" Click="btnChamps_Click"/>
+            <Button FontSize="24" Grid.Column="2" x:Name="btnItems" Content="Items" Click="btnItems_Click"/>
+            <Button FontSize="24" Grid.Column="3" x:Name="btnComps" Content="Comps" Click="btnComps_Click"/>
+        </Grid>
+        <Grid x:Name="contentControl" Grid.Row="1">
             <userControls:Home x:Name="home"></userControls:Home>
             <userControls:Champs x:Name="champs" Visibility="Collapsed"></userControls:Champs>
             <userControls:ItemView x:Name="items" Visibility="Collapsed"></userControls:ItemView>
             <userControls:CompView x:Name="comp" Visibility="Collapsed"></userControls:CompView>
+        </Grid>
+        <Grid x:Name="currentComposition" Grid.Row="2">
+                
         </Grid>
     </Grid>
 </Window>

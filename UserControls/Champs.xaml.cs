@@ -191,7 +191,7 @@ namespace TFT_Tracker.UserControls
                 for (int j = 0; j < cost[i]; j++)
                 {
 
-                    var img = CreateImage(arrayChampsSorted[k, 0], colours[i]);
+                    Border img = CreateImage("Champs/" + arrayChampsSorted[k, 0], colours[i]);
                     img.Margin = new Thickness(5, 5, 5, 5);
                     Grid.SetRow(img, i);
                     Grid.SetColumn(img, j);
@@ -216,7 +216,7 @@ namespace TFT_Tracker.UserControls
             tempBorder.VerticalAlignment = VerticalAlignment.Center;
             tempBorder.HorizontalAlignment = HorizontalAlignment.Center;
             Image img = new Image();
-            ImageSource Image = new BitmapImage(new Uri("C://Users/Pascal/source/repos/TFT-Tracker/Resources/Images/Champs/" + var + ".png")); // relativer pfad
+            ImageSource Image = new BitmapImage(new Uri("C://Users/Pascal/source/repos/TFT-Tracker/Resources/Images/" + var + ".png")); // relativer pfad
             img.Source = Image;
             tempBorder.Child = img;
             return tempBorder;

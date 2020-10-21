@@ -6,7 +6,5 @@
              xmlns:local="clr-namespace:TFT_Tracker.UserControls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <TextBlock Text="ChampView"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
-    </Grid>
+    
 </UserControl>
