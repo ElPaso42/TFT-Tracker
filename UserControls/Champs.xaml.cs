@@ -26,7 +26,6 @@ namespace TFT_Tracker.UserControls
             InitializeComponent();
             Grid gridChamps = new Grid();
             gridChamps.VerticalAlignment = VerticalAlignment.Top;
-            gridChamps.Background = Brushes.DimGray;
 
             string[,] arrayChamps = new string[,]   {
                                                         { "Aatrox", "4" },
@@ -199,7 +198,6 @@ namespace TFT_Tracker.UserControls
                     k++;
                 }
             }
-
 
             // Display grid into a Window
 
